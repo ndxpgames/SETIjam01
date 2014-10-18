@@ -5,9 +5,45 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
-  <backgrounds name="background"/>
+  <sprites name="sprites">
+    <sprite>sprites\spr_grid_area</sprite>
+    <sprite>sprites\spr_star_2x2</sprite>
+    <sprite>sprites\spr_star_4x4</sprite>
+    <sprite>sprites\spr_star_6x6</sprite>
+    <sprite>sprites\spr_btn_play</sprite>
+    <sprite>sprites\spr_btn_exit</sprite>
+    <sprite>sprites\spr_ship</sprite>
+    <sprite>sprites\spr_movement_marker</sprite>
+    <sprite>sprites\spr_fow</sprite>
+  </sprites>
+  <backgrounds name="background">
+    <background>background\bg_black</background>
+  </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\script_generate_areas.gml</script>
+    <script>scripts\script_randomize.gml</script>
+    <script>scripts\script_generate_star.gml</script>
+    <script>scripts\script_create_celestial_bodies.gml</script>
+  </scripts>
+  <objects name="objects">
+    <object>objects\obj_grid_area</object>
+    <object>objects\obj_star_2x2</object>
+    <object>objects\obj_star_4x4</object>
+    <object>objects\obj_star_6x6</object>
+    <object>objects\obj_controller_menu</object>
+    <object>objects\obj_contoller_gameboard</object>
+    <object>objects\obj_btn_play</object>
+    <object>objects\obj_btn_exit</object>
+    <object>objects\obj_ship</object>
+    <object>objects\obj_ship_moving</object>
+    <object>objects\obj_movement_marker</object>
+    <object>objects\obj_fow</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\room_menu</room>
+    <room>rooms\room_gameboard</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>

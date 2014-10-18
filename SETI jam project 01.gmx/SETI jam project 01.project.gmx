@@ -16,6 +16,7 @@
     <sprite>sprites\spr_movement_marker</sprite>
     <sprite>sprites\spr_fow</sprite>
     <sprite>sprites\spr_fov_bomb</sprite>
+    <sprite>sprites\spr_ui_bottom</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_black</background>
@@ -24,8 +25,11 @@
   <scripts name="scripts">
     <script>scripts\script_generate_areas.gml</script>
     <script>scripts\script_randomize.gml</script>
-    <script>scripts\script_generate_star.gml</script>
     <script>scripts\script_create_celestial_bodies.gml</script>
+    <script>scripts\script_initialize_globals.gml</script>
+    <script>scripts\script_resource_decrement.gml</script>
+    <script>scripts\script_check_resources.gml</script>
+    <script>scripts\script_check_map.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_grid_area</object>
@@ -41,6 +45,7 @@
     <object>objects\obj_movement_marker</object>
     <object>objects\obj_fow</object>
     <object>objects\obj_fov_bomb</object>
+    <object>objects\obj_ui_bottom</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>

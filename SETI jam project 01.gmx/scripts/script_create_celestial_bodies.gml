@@ -3,6 +3,9 @@ var stars;
 var planets;
 var asteroids;
 var moons;
+var planet_check;
+
+planet_check = 0;
 
 if (grid_index = 1) {
     stars = 0;
@@ -30,6 +33,19 @@ grid_info[myindex, 1] = planets;
 grid_info[myindex, 2] = asteroids;
 grid_info[myindex, 3] = moons;
 grid_info[myindex, 4] = celestial_bodies;
+
+if planets > 0 {
+    { do {
+        planet_check += 1;
+        planet_id += 1;
+        planet_info[planet_id, 0] = irandom(1);
+        planet_info[planet_id, 1] = irandom(1);
+        planet_info[planet_id, 2] = irandom(1);
+        planet_info[planet_id, 3] = irandom(1);
+        planet_info[planet_id, 4] = grid_index;
+        }
+    until (planet_check = planets);}
+    }
 
 if stars > 0 {
     var star_type;

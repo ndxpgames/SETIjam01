@@ -17,6 +17,10 @@
     <sprite>sprites\spr_fow</sprite>
     <sprite>sprites\spr_fov_bomb</sprite>
     <sprite>sprites\spr_ui_bottom</sprite>
+    <sprite>sprites\spr_ui_scanModal</sprite>
+    <sprite>sprites\spr_scanModal_close</sprite>
+    <sprite>sprites\spr_scanModal_scanOn</sprite>
+    <sprite>sprites\spr_question</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_black</background>
@@ -46,6 +50,11 @@
     <object>objects\obj_fow</object>
     <object>objects\obj_fov_bomb</object>
     <object>objects\obj_ui_bottom</object>
+    <object>objects\obj_ui_scanModal</object>
+    <object>objects\obj_scanModal_close</object>
+    <object>objects\obj_scanModal_scan</object>
+    <object>objects\obj_question</object>
+    <object>objects\obj_controller_values</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>

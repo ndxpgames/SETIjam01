@@ -32,6 +32,10 @@
     <sprite>sprites\sprite_UIspaceship</sprite>
     <sprite>sprites\spr_btn_restart</sprite>
     <sprite>sprites\spr_spaceship_anim</sprite>
+    <sprite>sprites\spr_cutscene_bg</sprite>
+    <sprite>sprites\spr_cutscene_mg</sprite>
+    <sprite>sprites\spr_cutscene_ship</sprite>
+    <sprite>sprites\spr_cutscene_smoke1</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_black</background>
@@ -77,6 +81,11 @@
     <object>objects\obj_scanModal_scan_inactive</object>
     <object>objects\win_text</object>
     <object>objects\lose_text</object>
+    <object>objects\obj_controller_cutscene</object>
+    <object>objects\obj_cutscene_bg</object>
+    <object>objects\obj_cutscene_mg</object>
+    <object>objects\obj_cutscene_ship</object>
+    <object>objects\obj_cutscene_smoke</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>

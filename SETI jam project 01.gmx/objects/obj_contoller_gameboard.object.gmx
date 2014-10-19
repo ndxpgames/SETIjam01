@@ -226,6 +226,30 @@
       </action>
       <action>
         <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>lose_message</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>"You have run out of resources!"</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>212</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -343,6 +367,30 @@
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>win_message</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>"You have revealed the entire map!"</string>
+          </argument>
+        </arguments>
       </action>
       <action>
         <libid>1</libid>
@@ -466,6 +514,30 @@
       </action>
       <action>
         <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>win_message</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>"You have found communicating life!"</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>212</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -580,10 +652,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(130, 729, global.fuel);
-draw_text(380, 729, global.air);
-draw_text(645, 729, global.water);
-draw_text(900, 729, global.food);
+            <string>draw_set_font(fnt_classic_robot);
+draw_text(130, 727, global.fuel);
+draw_text(380, 727, global.air);
+draw_text(645, 727, global.water);
+draw_text(900, 727, global.food);
 </string>
           </argument>
         </arguments>

@@ -3,32 +3,12 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-10</depth>
+  <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>524</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_color</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>13</kind>
-            <string>16777215</string>
-          </argument>
-        </arguments>
-      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -45,25 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(850, 255, global.current_celestial_bodies);
-draw_text(850, 305, global.current_stars);
-draw_text(850, 355, global.current_planets);
-draw_text(850, 450, global.current_asteroids);
-draw_text(850, 545, global.current_moons);
-
-draw_set_font(fnt_stark);
-
-if (ecosystem_found == 1) {
-draw_text(475, 380, "Ecosystem! ");
-    }
-if (life_found == 1) {
-draw_text(625, 380, "Life! ");
-    }
-if (intelligence_found == 1) {
-draw_text(725, 380, "Intelligence! ");
-    }
-
-draw_text(450, 410, "Fuel: " + string(total_fuel_bonus) + " | Air: " + string(total_air_bonus) + " | Water: " + string(total_water_bonus) + " | Food: " + string(total_food_bonus));
+            <string>draw_set_font(fnt_stark);
+draw_text(400, 100, lose_message);
 </string>
           </argument>
         </arguments>

@@ -106,10 +106,10 @@ do {
     if (planet_info[planet_loop, 4] = current_grid) {
         if (planet_info[planet_loop, 0] = 1) { // ecosystem
             ecosystem_found = 1;
-            fuel_bonus = 1.5*planet_info[planet_loop, 5];
-            air_bonus = 1*planet_info[planet_loop, 5];
-            water_bonus = 1*planet_info[planet_loop, 5];
-            food_bonus = 0*planet_info[planet_loop, 5];
+            fuel_bonus = round(1.5*planet_info[planet_loop, 5]);
+            air_bonus = round(1*planet_info[planet_loop, 5]);
+            water_bonus = round(1*planet_info[planet_loop, 5]);
+            food_bonus = round(0*planet_info[planet_loop, 5]);
             global.fuel = global.fuel + fuel_bonus;
             total_fuel_bonus = total_fuel_bonus + fuel_bonus;
             global.air = global.air + air_bonus;
@@ -121,10 +121,10 @@ do {
             }
         if (planet_info[planet_loop, 1] = 1) { // life
             life_found = 1;
-            fuel_bonus = 1*planet_info[planet_loop, 5];
-            air_bonus = 1*planet_info[planet_loop, 5];
-            water_bonus = 1*planet_info[planet_loop, 5];
-            food_bonus = 1.5*planet_info[planet_loop, 5];
+            fuel_bonus = round(1*planet_info[planet_loop, 5]);
+            air_bonus = round(1*planet_info[planet_loop, 5]);
+            water_bonus = round(1*planet_info[planet_loop, 5]);
+            food_bonus = round(1.5*planet_info[planet_loop, 5]);
             global.fuel = global.fuel + fuel_bonus;
             total_fuel_bonus = total_fuel_bonus + fuel_bonus;
             global.air = global.air + air_bonus;
@@ -136,10 +136,10 @@ do {
             }
         if (planet_info[planet_loop, 2] = 1) { // intelligence
             intelligence_found = 1;
-            fuel_bonus = 1*planet_info[planet_loop, 5];
-            air_bonus = 1*planet_info[planet_loop, 5];
-            water_bonus = 1*planet_info[planet_loop, 5];
-            food_bonus = 1.5*planet_info[planet_loop, 5];
+            fuel_bonus = round(1*planet_info[planet_loop, 5]);
+            air_bonus = round(1*planet_info[planet_loop, 5]);
+            water_bonus = round(1*planet_info[planet_loop, 5]);
+            food_bonus = round(1.5*planet_info[planet_loop, 5]);
             global.fuel = global.fuel + fuel_bonus;
             total_fuel_bonus = total_fuel_bonus + fuel_bonus;
             global.air = global.air + air_bonus;
@@ -151,10 +151,10 @@ do {
             }
         if (planet_info[planet_loop, 3] = 1) { // comm
             communicationFound = 1;
-            fuel_bonus = 1*planet_info[planet_loop, 5];
-            air_bonus = 1*planet_info[planet_loop, 5];
-            water_bonus = 1*planet_info[planet_loop, 5];
-            food_bonus = 1.5*planet_info[planet_loop, 5];
+            fuel_bonus = round(1*planet_info[planet_loop, 5]);
+            air_bonus = round(1*planet_info[planet_loop, 5]);
+            water_bonus = round(1*planet_info[planet_loop, 5]);
+            food_bonus = round(1.5*planet_info[planet_loop, 5]);
             global.fuel = global.fuel + fuel_bonus;
             total_fuel_bonus = total_fuel_bonus + fuel_bonus;
             global.air = global.air + air_bonus;

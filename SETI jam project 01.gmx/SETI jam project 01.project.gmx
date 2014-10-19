@@ -49,6 +49,10 @@
     <script>scripts\script_check_resources.gml</script>
     <script>scripts\script_check_map.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_classic_robot</font>
+    <font>fonts\fnt_stark</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_grid_area</object>
     <object>objects\obj_star_2x2</object>
@@ -71,6 +75,8 @@
     <object>objects\obj_controller_values</object>
     <object>objects\obj_btn_restart</object>
     <object>objects\obj_scanModal_scan_inactive</object>
+    <object>objects\win_text</object>
+    <object>objects\lose_text</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>

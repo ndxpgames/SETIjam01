@@ -34,6 +34,9 @@ globalvar ecosystem_found;
 globalvar life_found;
 globalvar intelligence_found;
 
+globalvar win_message;
+globalvar lose_message;
+
 grid_index = 0;
 fuel = 5000;
 air = 5000;

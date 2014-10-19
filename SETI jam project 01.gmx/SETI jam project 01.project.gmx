@@ -9,6 +9,7 @@
     <sound>sound\snd_losegame</sound>
     <sound>sound\snd_scan</sound>
     <sound>sound\snd_bgm</sound>
+    <sound>sound\snd_click</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_grid_area</sprite>

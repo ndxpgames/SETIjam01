@@ -69,8 +69,15 @@ global.current_asteroids = grid_info[current_grid, 2];
 global.current_moons = grid_info[current_grid, 3];
 global.current_celestial_bodies = grid_info[current_grid, 4];
 
+global.scan_found = "";
+global.fuel_found = "";
+global.air_found = "";
+global.water_found = "";
+global.food_found = "";
+
 var total_planets;
 var planet_loop;
+
 var fuel_bonus;
 var air_bonus;
 var water_bonus;
@@ -80,6 +87,16 @@ fuel_bonus = 0;
 air_bonus = 0;
 water_bonus = 0;
 food_bonus = 0;
+
+total_fuel_bonus = 0;
+total_air_bonus = 0;
+total_water_bonus = 0;
+total_food_bonus = 0;
+
+ecosystem_found = 0;
+life_found = 0;
+intelligence_found = 0;
+
 total_planets = planet_id;
 planet_loop = 0;
 
@@ -88,34 +105,49 @@ do {
     planet_loop += 1;
     if (planet_info[planet_loop, 4] = current_grid) {
         if (planet_info[planet_loop, 0] = 1) { // ecosystem
+            ecosystem_found = 1;
             fuel_bonus = 1.5*planet_info[planet_loop, 5];
             air_bonus = 1*planet_info[planet_loop, 5];
             water_bonus = 1*planet_info[planet_loop, 5];
             food_bonus = 0*planet_info[planet_loop, 5];
             global.fuel = global.fuel + fuel_bonus;
+            total_fuel_bonus = total_fuel_bonus + fuel_bonus;
             global.air = global.air + air_bonus;
+            total_air_bonus = total_air_bonus + air_bonus;
             global.water = global.water + water_bonus;
+            total_water_bonus = total_water_bonus + water_bonus;
             global.food = global.food + food_bonus;
+            total_food_bonus = total_food_bonus + food_bonus;
             }
         if (planet_info[planet_loop, 1] = 1) { // life
+            life_found = 1;
             fuel_bonus = 1*planet_info[planet_loop, 5];
             air_bonus = 1*planet_info[planet_loop, 5];
             water_bonus = 1*planet_info[planet_loop, 5];
             food_bonus = 1.5*planet_info[planet_loop, 5];
             global.fuel = global.fuel + fuel_bonus;
+            total_fuel_bonus = total_fuel_bonus + fuel_bonus;
             global.air = global.air + air_bonus;
+            total_air_bonus = total_air_bonus + air_bonus;
             global.water = global.water + water_bonus;
+            total_water_bonus = total_water_bonus + water_bonus;
             global.food = global.food + food_bonus;
+            total_food_bonus = total_food_bonus + food_bonus;
             }
         if (planet_info[planet_loop, 2] = 1) { // intelligence
+            intelligence_found = 1;
             fuel_bonus = 1*planet_info[planet_loop, 5];
             air_bonus = 1*planet_info[planet_loop, 5];
             water_bonus = 1*planet_info[planet_loop, 5];
             food_bonus = 1.5*planet_info[planet_loop, 5];
             global.fuel = global.fuel + fuel_bonus;
+            total_fuel_bonus = total_fuel_bonus + fuel_bonus;
             global.air = global.air + air_bonus;
+            total_air_bonus = total_air_bonus + air_bonus;
             global.water = global.water + water_bonus;
+            total_water_bonus = total_water_bonus + water_bonus;
             global.food = global.food + food_bonus;
+            total_food_bonus = total_food_bonus + food_bonus;
             }
         if (planet_info[planet_loop, 3] = 1) { // comm
             communicationFound = 1;
@@ -124,9 +156,13 @@ do {
             water_bonus = 1*planet_info[planet_loop, 5];
             food_bonus = 1.5*planet_info[planet_loop, 5];
             global.fuel = global.fuel + fuel_bonus;
+            total_fuel_bonus = total_fuel_bonus + fuel_bonus;
             global.air = global.air + air_bonus;
+            total_air_bonus = total_air_bonus + air_bonus;
             global.water = global.water + water_bonus;
+            total_water_bonus = total_water_bonus + water_bonus;
             global.food = global.food + food_bonus;
+            total_food_bonus = total_food_bonus + food_bonus;
             }
     } }
     until (planet_loop = total_planets); }
@@ -161,6 +197,30 @@ do {
           <argument>
             <kind>0</kind>
             <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>202</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_change_object</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>10</kind>
+            <object>obj_scanModal_scan_inactive</object>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>1</string>
           </argument>
         </arguments>
       </action>

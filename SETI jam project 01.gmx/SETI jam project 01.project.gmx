@@ -30,6 +30,7 @@
     <sprite>sprites\spr_embark</sprite>
     <sprite>sprites\sprite_UIspaceship</sprite>
     <sprite>sprites\spr_btn_restart</sprite>
+    <sprite>sprites\spr_spaceship_anim</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_black</background>
@@ -68,6 +69,7 @@
     <object>objects\obj_question</object>
     <object>objects\obj_controller_values</object>
     <object>objects\obj_btn_restart</object>
+    <object>objects\obj_scanModal_scan_inactive</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>

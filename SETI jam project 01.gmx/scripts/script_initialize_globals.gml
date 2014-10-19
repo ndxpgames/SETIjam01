@@ -17,6 +17,22 @@ globalvar planet_id;
 globalvar planet_info;
 globalvar passengers;
 globalvar communicationFound;
+globalvar future_grid;
+
+globalvar scan_found;
+globalvar fuel_found;
+globalvar air_found;
+globalvar water_found;
+globalvar food_found;
+
+globalvar total_fuel_bonus;
+globalvar total_air_bonus;
+globalvar total_water_bonus;
+globalvar total_food_bonus;
+
+globalvar ecosystem_found;
+globalvar life_found;
+globalvar intelligence_found;
 
 grid_index = 0;
 fuel = 5000;
@@ -28,3 +44,4 @@ canmove = 1;
 planet_id = 0;
 passengers = 5;
 communicationFound = 0;
+future_grid = 1;

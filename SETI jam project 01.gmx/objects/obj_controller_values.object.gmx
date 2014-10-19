@@ -50,6 +50,18 @@ draw_text(850, 305, global.current_stars);
 draw_text(850, 355, global.current_planets);
 draw_text(850, 450, global.current_asteroids);
 draw_text(850, 545, global.current_moons);
+
+if (ecosystem_found == 1) {
+draw_text(475, 380, "Ecosystem! ");
+    }
+if (life_found == 1) {
+draw_text(625, 380, "Life! ");
+    }
+if (intelligence_found == 1) {
+draw_text(725, 380, "Intelligence! ");
+    }
+
+draw_text(450, 410, "Fuel: " + string(total_fuel_bonus) + " | Air: " + string(total_air_bonus) + " | Water: " + string(total_water_bonus) + " | Food: " + string(total_food_bonus));
 </string>
           </argument>
         </arguments>

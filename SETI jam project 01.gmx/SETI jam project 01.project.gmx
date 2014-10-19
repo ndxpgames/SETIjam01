@@ -4,7 +4,12 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_victory</sound>
+    <sound>sound\snd_losegame</sound>
+    <sound>sound\snd_scan</sound>
+    <sound>sound\snd_bgm</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_grid_area</sprite>
     <sprite>sprites\spr_star_2x2</sprite>
@@ -21,9 +26,16 @@
     <sprite>sprites\spr_scanModal_close</sprite>
     <sprite>sprites\spr_scanModal_scanOn</sprite>
     <sprite>sprites\spr_question</sprite>
+    <sprite>sprites\spr_scanModal_scanOff</sprite>
+    <sprite>sprites\spr_embark</sprite>
+    <sprite>sprites\sprite_UIspaceship</sprite>
+    <sprite>sprites\spr_btn_restart</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_black</background>
+    <background>background\bg_menu</background>
+    <background>background\bg_win</background>
+    <background>background\bg_lose</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -55,10 +67,13 @@
     <object>objects\obj_scanModal_scan</object>
     <object>objects\obj_question</object>
     <object>objects\obj_controller_values</object>
+    <object>objects\obj_btn_restart</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_menu</room>
     <room>rooms\room_gameboard</room>
+    <room>rooms\room_win</room>
+    <room>rooms\room_lose</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
